@@ -99,7 +99,7 @@ export function TechMatchLayout({ children }: { children: ReactNode }) {
               <span className="font-display text-lg font-bold">TechMatch</span>
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-foreground/60">
-              A trusted technology advisor serving organizations across the {company.geography}.
+              A trusted vendor sourcing partner serving organizations across the {company.geography}.
             </p>
           </div>
           <div>
