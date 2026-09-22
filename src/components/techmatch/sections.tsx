@@ -270,16 +270,16 @@ export function AdvisoryCard() {
       </p>
       <dl className="mt-6 grid gap-4 text-sm sm:grid-cols-3">
         <div>
-          <dt className="text-foreground/45">Provider ecosystem</dt>
-          <dd className="mt-1 font-display text-xl font-bold text-brand">400+</dd>
+          <dt className="text-foreground/45">We Find</dt>
+          <dd className="mt-1 font-display text-xl font-bold text-brand">The right fit</dd>
         </div>
         <div>
-          <dt className="text-foreground/45">Technology scope</dt>
-          <dd className="mt-1 font-display text-xl font-bold text-brand">End-to-End</dd>
+          <dt className="text-foreground/45">We Negotiate</dt>
+          <dd className="mt-1 font-display text-xl font-bold text-brand">Better terms</dd>
         </div>
         <div>
-          <dt className="text-foreground/45">Client reach</dt>
-          <dd className="mt-1 font-display text-xl font-bold text-brand">US + Canada</dd>
+          <dt className="text-foreground/45">We Stay</dt>
+          <dd className="mt-1 font-display text-xl font-bold text-brand">Through implementation</dd>
         </div>
       </dl>
     </div>
