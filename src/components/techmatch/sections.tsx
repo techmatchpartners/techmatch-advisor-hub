@@ -266,22 +266,12 @@ export function AdvisoryCard() {
       <MatchMark className="size-12 text-brand" />
       <h2 className="mt-6 font-display text-2xl font-bold">One focused advisor across the whole decision.</h2>
       <p className="mt-4 text-sm leading-relaxed text-foreground/70">
-        TechMatch helps connect business requirements to suitable providers, then remains involved through evaluation, negotiation, implementation, and future needs.
+        From finding the right providers to negotiating terms and navigating implementation, TechMatch does the legwork so your team can focus on the decision.
       </p>
-      <dl className="mt-6 grid gap-4 text-sm sm:grid-cols-3">
-        <div>
-          <dt className="text-foreground/45">We Find</dt>
-          <dd className="mt-1 font-display text-xl font-bold text-brand">The right fit</dd>
-        </div>
-        <div>
-          <dt className="text-foreground/45">We Negotiate</dt>
-          <dd className="mt-1 font-display text-xl font-bold text-brand">Better terms</dd>
-        </div>
-        <div>
-          <dt className="text-foreground/45">We Stay</dt>
-          <dd className="mt-1 font-display text-xl font-bold text-brand">Through implementation</dd>
-        </div>
-      </dl>
+      <div className="mt-8 border-t border-line pt-8">
+        <p className="font-display text-5xl font-bold leading-none text-brand">400+</p>
+        <p className="mt-3 text-sm text-foreground/55">Technology providers. One point of contact.</p>
+      </div>
     </div>
   );
 }
