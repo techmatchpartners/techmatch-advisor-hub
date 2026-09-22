@@ -3,7 +3,7 @@ export const company = {
   brand: "TechMatch",
   email: "info@techmatchpartners.com",
   geography: "United States and Canada",
-  providerCount: "400+",
+  providerCount: "500+",
   employeeRange: "50–5,000 employees",
 };
 
@@ -152,7 +152,7 @@ export const processSteps = [
   {
     step: "2",
     title: "Match",
-    short: "We identify appropriate solutions and providers from our ecosystem of 400+ technology companies.",
+    short: "We identify appropriate solutions and providers from our ecosystem of 500+ technology companies.",
     detail:
       "TechMatch narrows a crowded technology marketplace into a more manageable set of providers and solution approaches that align with your requirements, budget window, timing, and internal capacity.",
   },
@@ -207,7 +207,7 @@ export const principles = [
   },
   {
     title: "Choice",
-    description: "Use a broad ecosystem of 400+ providers to evaluate multiple approaches.",
+    description: "Use a broad ecosystem of 500+ providers to evaluate multiple approaches.",
   },
   {
     title: "Engagement",
@@ -243,7 +243,7 @@ export const faqs = [
   {
     question: "How many technology providers do you work with?",
     answer:
-      "TechMatch works with an ecosystem of 400+ technology providers across a broad range of technology categories.",
+      "TechMatch works with an ecosystem of 500+ technology providers across a broad range of technology categories.",
   },
   {
     question: "Can TechMatch help negotiate pricing?",
@@ -275,7 +275,7 @@ export const faqs = [
 export const seoBase = {
   siteName: "TechMatch LLC",
   description:
-    "TechMatch helps IT leaders identify, evaluate, negotiate, and implement the right technology solutions from 400+ providers.",
+    "TechMatch helps IT leaders identify, evaluate, negotiate, and implement the right technology solutions from 500+ providers.",
 };
 
 export function pageMeta({

@@ -17,7 +17,7 @@ export const Route = createFileRoute("/")({
     ...pageMeta({
       title: "TechMatch LLC — Technology Advisory & Vendor Selection",
       description:
-        "TechMatch helps IT leaders across the United States and Canada identify, evaluate, negotiate, and implement technology solutions from 400+ providers.",
+        "TechMatch helps IT leaders across the United States and Canada identify, evaluate, negotiate, and implement technology solutions from 500+ providers.",
       path: "/",
     }),
     scripts: [
@@ -46,13 +46,13 @@ function HomePage() {
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 pb-20 pt-16 lg:grid-cols-12 lg:pt-24">
           <div className="lg:col-span-7">
             <p className="inline-flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-brand">
-              <span className="size-1.5 rounded-full bg-mint" aria-hidden="true" /> {"400+ technology providers"}
+              <span className="size-1.5 rounded-full bg-mint" aria-hidden="true" /> {"500+ technology providers"}
             </p>
             <h1 className="mt-6 font-display text-5xl font-bold leading-[0.98] text-balance sm:text-6xl lg:text-7xl">
               Technology decisions, <span className="text-brand">matched</span> to your business.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-foreground/70">
-              TechMatch helps IT leaders navigate 400+ technology providers to find, evaluate, negotiate, and implement the solutions that fit your organization — so your team can focus on running IT.
+              TechMatch helps IT leaders navigate 500+ technology providers to find, evaluate, negotiate, and implement the solutions that fit your organization — so your team can focus on running IT.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-4">
               <Button asChild variant="dark" size="xlPill">
