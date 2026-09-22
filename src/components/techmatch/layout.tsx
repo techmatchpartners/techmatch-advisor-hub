@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import { ArrowRightIcon, CloseIcon, MenuIcon } from "./icons";
 import { company, navItems } from "./content";
 
-export function TechMatchLayout({ children }: { children: React.ReactNode }) {
+export function TechMatchLayout({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -49,15 +49,17 @@ export function TechMatchLayout({ children }: { children: React.ReactNode }) {
             </Button>
           </div>
 
-          <button
+          <Button
             type="button"
-            className="inline-grid size-10 place-items-center rounded-full border border-line bg-surface text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background md:hidden"
+            variant="outline"
+            size="icon"
+            className="inline-grid size-10 rounded-full border-line bg-surface text-foreground shadow-none hover:bg-muted md:hidden"
             aria-label={isOpen ? "Close navigation" : "Open navigation"}
             aria-expanded={isOpen}
             onClick={() => setIsOpen((open) => !open)}
           >
             {isOpen ? <CloseIcon className="size-5" /> : <MenuIcon className="size-5" />}
-          </button>
+          </Button>
         </nav>
 
         {isOpen ? (
