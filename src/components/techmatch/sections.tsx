@@ -274,11 +274,11 @@ export function AdvisoryCard() {
           <dd className="mt-1 font-display text-xl font-bold text-brand">400+</dd>
         </div>
         <div>
-          <dt className="text-foreground/45">Primary fit</dt>
-          <dd className="mt-1 font-display text-xl font-bold text-brand">50–5,000</dd>
+          <dt className="text-foreground/45">Technology scope</dt>
+          <dd className="mt-1 font-display text-xl font-bold text-brand">End-to-End</dd>
         </div>
         <div>
-          <dt className="text-foreground/45">Coverage</dt>
+          <dt className="text-foreground/45">Client reach</dt>
           <dd className="mt-1 font-display text-xl font-bold text-brand">US + Canada</dd>
         </div>
       </dl>
