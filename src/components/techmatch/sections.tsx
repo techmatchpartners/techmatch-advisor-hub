@@ -269,7 +269,7 @@ export function AdvisoryCard() {
         From finding the right providers to negotiating terms and navigating implementation, TechMatch does the legwork so your team can focus on the decision.
       </p>
       <div className="mt-8 border-t border-line pt-8">
-        <p className="font-display text-5xl font-bold leading-none text-brand">400+</p>
+        <p className="font-display text-5xl font-bold leading-none text-brand">500+</p>
         <p className="mt-3 text-sm text-foreground/55">Technology providers. One point of contact.</p>
       </div>
     </div>

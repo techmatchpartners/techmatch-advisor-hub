@@ -69,7 +69,7 @@ function ServicesPage() {
             <div>
               <h2 className="font-display text-3xl font-bold text-balance">Have a category in mind?</h2>
               <p className="mt-3 max-w-2xl text-sm leading-relaxed text-background/70">
-                TechMatch can help compare providers already under consideration or identify alternative approaches from its ecosystem of 400+ technology providers.
+                TechMatch can help compare providers already under consideration or identify alternative approaches from its ecosystem of 500+ technology providers.
               </p>
             </div>
             <Button asChild variant="inverse" size="xlPill">

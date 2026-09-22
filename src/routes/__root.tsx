@@ -100,7 +100,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           email: "info@techmatchpartners.com",
           areaServed: ["United States", "Canada"],
           description:
-            "TechMatch helps companies identify, evaluate, negotiate, and implement technology solutions from an ecosystem of 400+ providers.",
+            "TechMatch helps companies identify, evaluate, negotiate, and implement technology solutions from an ecosystem of 500+ providers.",
         }),
       },
       {
