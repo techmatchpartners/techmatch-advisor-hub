@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
 import { ArrowRightIcon, CheckIcon } from "./icons";
+import { company } from "./content";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required.").max(100, "Name must be less than 100 characters."),
@@ -31,15 +32,26 @@ export function ContactForm() {
 
   function updateField(field: keyof FormValues, value: string) {
     setValues((current) => ({ ...current, [field]: value }));
-    setErrors((current) => ({ ...current, [field]: undefined }));
-    if (status === "error") setStatus("idle");
+    setErrors((current) => {
+      const next = { ...current };
+      delete next[field];
+      return next;
+    });
+    if (status === "error" || status === "success") setStatus("idle");
   }
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setStatus("loading");
 
-    const result = contactSchema.safeParse(values);
+    const formData = new FormData(event.currentTarget);
+    const submittedValues: FormValues = {
+      name: String(formData.get("name") ?? ""),
+      company: String(formData.get("company") ?? ""),
+      email: String(formData.get("email") ?? ""),
+      phone: String(formData.get("phone") ?? ""),
+    };
+    const result = contactSchema.safeParse(submittedValues);
     if (!result.success) {
       const nextErrors: FormErrors = {};
       result.error.issues.forEach((issue) => {
@@ -110,13 +122,15 @@ export function ContactForm() {
           {status === "loading" ? "Sending..." : "Get a Match"}
           <ArrowRightIcon className="size-5" />
         </Button>
-        <p className="text-sm text-foreground/60">A member of the TechMatch team will get in touch.</p>
+        <p className="text-sm text-foreground/60">This form is ready for a future backend or CRM connection.</p>
       </div>
 
       {status === "success" ? (
         <div className="mt-5 flex gap-3 rounded-2xl border border-success/20 bg-success/10 p-4 text-sm text-success">
           <CheckIcon className="mt-0.5 size-4 shrink-0" />
-          <p>Thanks. Your request is ready for the TechMatch team when a form backend is connected.</p>
+          <p>
+            Thanks. The form is ready to connect; for now, email <a className="font-semibold underline underline-offset-4" href={`mailto:${company.email}`}>{company.email}</a>.
+          </p>
         </div>
       ) : null}
 
@@ -150,7 +164,7 @@ function Field({
   required?: boolean;
   type?: string;
   value: string;
-  error?: string;
+  error: string | undefined;
   autoComplete?: string;
   onChange: (value: string) => void;
 }) {

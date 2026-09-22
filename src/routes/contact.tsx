@@ -19,7 +19,7 @@ function ContactPage() {
     <section className="mx-auto grid max-w-6xl gap-12 px-6 py-16 lg:grid-cols-[0.88fr_1.12fr] lg:items-start lg:py-24">
       <div>
         <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand">Get a Match</p>
-        <h1 className="mt-4 font-display text-5xl font-bold leading-[1.02] tracking-tight text-balance sm:text-6xl">
+        <h1 className="mt-4 font-display text-5xl font-bold leading-[1.02] text-balance sm:text-6xl">
           Let's find your match.
         </h1>
         <p className="mt-6 text-lg leading-relaxed text-foreground/70">

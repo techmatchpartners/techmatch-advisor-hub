@@ -57,7 +57,7 @@ export function ValuePillars() {
     <section className="border-y border-line bg-surface">
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="mb-10 max-w-3xl">
-          <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl">
+          <h2 className="font-display text-3xl font-bold text-balance sm:text-4xl">
             {company.providerCount} Technology Providers. One Trusted Advisor.
           </h2>
           <p className="mt-4 text-base leading-relaxed text-foreground/70">
@@ -88,7 +88,7 @@ export function ServicesPreview() {
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand">What we help you source</p>
-          <h2 className="mt-3 max-w-3xl font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl">
+          <h2 className="mt-3 max-w-3xl font-display text-3xl font-bold text-balance sm:text-4xl">
             Thirteen ways we match you to the right technology.
           </h2>
         </div>
@@ -115,7 +115,7 @@ export function ProcessPreview() {
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-mint">How it works</p>
-            <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl">
+            <h2 className="mt-3 font-display text-3xl font-bold text-balance sm:text-4xl">
               A focused process, start to finish.
             </h2>
           </div>
@@ -144,7 +144,7 @@ export function DifferentiatorSection() {
     <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
       <div>
         <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand">A time multiplier for IT teams</p>
-        <h2 className="mt-3 font-display text-3xl font-bold leading-tight tracking-tight text-balance sm:text-4xl">
+        <h2 className="mt-3 font-display text-3xl font-bold leading-tight text-balance sm:text-4xl">
           Your time is better spent running IT than researching vendors.
         </h2>
       </div>
@@ -164,7 +164,7 @@ export function ClosingCta() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-20">
       <div className="rounded-[32px] bg-brand px-8 py-14 text-center text-brand-foreground sm:px-14">
-        <h2 className="mx-auto max-w-3xl font-display text-3xl font-bold leading-tight tracking-tight text-balance sm:text-5xl">
+        <h2 className="mx-auto max-w-3xl font-display text-3xl font-bold leading-tight text-balance sm:text-5xl">
           Tell us what you're trying to solve. We'll help you find the right match.
         </h2>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -189,7 +189,7 @@ export function ServicesByGroup({ detailed = false }: { detailed?: boolean }) {
       {serviceGroups.map((group) => (
         <section key={group.eyebrow} className="rounded-3xl border border-line bg-surface p-6">
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand">{group.eyebrow}</p>
-          <h2 className="mt-3 font-display text-2xl font-bold tracking-tight">{group.eyebrow}</h2>
+          <h2 className="mt-3 font-display text-2xl font-bold">{group.eyebrow}</h2>
           <p className="mt-3 text-sm leading-relaxed text-foreground/65">{group.description}</p>
           <div className="mt-6 space-y-5">
             {group.services.map((service) => (
@@ -215,7 +215,7 @@ export function ProcessDetail() {
             {step.step}
           </div>
           <div>
-            <h2 className="font-display text-2xl font-bold tracking-tight">{step.title}</h2>
+            <h2 className="font-display text-2xl font-bold">{step.title}</h2>
             <p className="mt-3 max-w-3xl text-base leading-relaxed text-foreground/70">{step.detail}</p>
           </div>
         </li>
@@ -264,7 +264,7 @@ export function AdvisoryCard() {
   return (
     <div className="rounded-3xl border border-line bg-surface p-8 shadow-match">
       <MatchMark className="size-12 text-brand" />
-      <h2 className="mt-6 font-display text-2xl font-bold tracking-tight">One focused advisor across the whole decision.</h2>
+      <h2 className="mt-6 font-display text-2xl font-bold">One focused advisor across the whole decision.</h2>
       <p className="mt-4 text-sm leading-relaxed text-foreground/70">
         TechMatch helps connect business requirements to suitable providers, then remains involved through evaluation, negotiation, implementation, and future needs.
       </p>

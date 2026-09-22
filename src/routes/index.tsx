@@ -48,7 +48,7 @@ function HomePage() {
             <p className="inline-flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-brand">
               <span className="size-1.5 rounded-full bg-mint" aria-hidden="true" /> {"400+ technology providers"}
             </p>
-            <h1 className="mt-6 font-display text-5xl font-bold leading-[0.98] tracking-tight text-balance sm:text-6xl lg:text-7xl">
+            <h1 className="mt-6 font-display text-5xl font-bold leading-[0.98] text-balance sm:text-6xl lg:text-7xl">
               Technology decisions, <span className="text-brand">matched</span> to your business.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-foreground/70">
@@ -64,7 +64,7 @@ function HomePage() {
                 <Link to="/services">Explore Our Services</Link>
               </Button>
             </div>
-            <p className="mt-6 text-sm text-foreground/50">Trusted by IT leaders across the United States and Canada.</p>
+            <p className="mt-6 text-sm text-foreground/50">Built for IT and business leaders across the United States and Canada.</p>
           </div>
           <div className="lg:col-span-5">
             <HeroVisual />

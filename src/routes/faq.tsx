@@ -37,7 +37,7 @@ function FaqPage() {
       <section className="mx-auto max-w-6xl px-6 py-16 lg:py-24">
         <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand">FAQ</p>
         <div className="mt-4 grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
-          <h1 className="font-display text-5xl font-bold leading-[1.02] tracking-tight text-balance sm:text-6xl">
+          <h1 className="font-display text-5xl font-bold leading-[1.02] text-balance sm:text-6xl">
             Questions technology leaders often ask.
           </h1>
           <p className="text-lg leading-relaxed text-foreground/70">
@@ -53,7 +53,7 @@ function FaqPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-20 text-center">
-        <h2 className="font-display text-3xl font-bold tracking-tight text-balance">Still evaluating your options?</h2>
+        <h2 className="font-display text-3xl font-bold text-balance">Still evaluating your options?</h2>
         <p className="mx-auto mt-3 max-w-2xl text-base leading-relaxed text-foreground/70">
           Tell us what you are working on and TechMatch will help you find the right match.
         </p>
