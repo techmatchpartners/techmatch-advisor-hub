@@ -27,7 +27,7 @@ function AboutPage() {
           </h1>
           <div className="mt-6 space-y-5 text-lg leading-relaxed text-foreground/70">
             <p>
-              Technology buyers face an increasingly complex marketplace. TechMatch exists to make that marketplace easier to navigate for organizations throughout the United States and Canada.
+              Technology leaders face an increasingly complex marketplace. TechMatch exists to make that marketplace easier to navigate for organizations throughout the United States and Canada.
             </p>
             <p>
               TechMatch helps internal teams identify appropriate providers, compare solution paths, navigate conversations, and stay supported through implementation and beyond.
