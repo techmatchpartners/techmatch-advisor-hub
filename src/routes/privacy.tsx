@@ -8,7 +8,7 @@ export const Route = createFileRoute("/privacy")({
   head: () =>
     pageMeta({
       title: "Privacy Policy — TechMatch LLC",
-      description: "Privacy Policy placeholder for TechMatch LLC, ready to be replaced with final legal language.",
+      description: "Privacy Policy for TechMatch LLC, ready to be replaced with final legal language.",
       path: "/privacy",
     }),
   component: PrivacyPage,

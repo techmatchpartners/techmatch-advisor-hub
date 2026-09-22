@@ -8,7 +8,7 @@ export const Route = createFileRoute("/terms")({
   head: () =>
     pageMeta({
       title: "Terms — TechMatch LLC",
-      description: "Terms placeholder for TechMatch LLC, ready to be replaced with final legal language.",
+      description: "Terms for TechMatch LLC, ready to be replaced with final legal language.",
       path: "/terms",
     }),
   component: TermsPage,
