@@ -42,7 +42,7 @@ function ServicesPage() {
         <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand">Technology advisory services</p>
         <div className="mt-4 grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
           <div>
-            <h1 className="font-display text-5xl font-bold leading-[1.02] tracking-tight text-balance sm:text-6xl">
+            <h1 className="font-display text-5xl font-bold leading-[1.02] text-balance sm:text-6xl">
               Find the right technology without sorting through the whole market.
             </h1>
           </div>
@@ -67,7 +67,7 @@ function ServicesPage() {
         <div className="rounded-[32px] bg-foreground p-8 text-background sm:p-12">
           <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
-              <h2 className="font-display text-3xl font-bold tracking-tight text-balance">Have a category in mind?</h2>
+              <h2 className="font-display text-3xl font-bold text-balance">Have a category in mind?</h2>
               <p className="mt-3 max-w-2xl text-sm leading-relaxed text-background/70">
                 TechMatch can help compare providers already under consideration or identify alternative approaches from its ecosystem of 400+ technology providers.
               </p>

@@ -18,7 +18,7 @@ function PrivacyPage() {
   return (
     <section className="mx-auto max-w-4xl px-6 py-16 lg:py-24">
       <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand">Legal</p>
-      <h1 className="mt-4 font-display text-5xl font-bold leading-[1.02] tracking-tight text-balance sm:text-6xl">
+      <h1 className="mt-4 font-display text-5xl font-bold leading-[1.02] text-balance sm:text-6xl">
         Privacy Policy
       </h1>
       <div className="mt-8 rounded-3xl border border-line bg-surface p-6 text-sm leading-relaxed text-foreground/70 sm:p-8">

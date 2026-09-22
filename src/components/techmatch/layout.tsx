@@ -24,7 +24,7 @@ export function TechMatchLayout({ children }: { children: ReactNode }) {
             <span className="grid size-8 place-items-center rounded-lg bg-foreground font-display text-sm font-bold text-background">
               M
             </span>
-            <span className="font-display text-lg font-bold tracking-tight">TechMatch</span>
+            <span className="font-display text-lg font-bold">TechMatch</span>
           </Link>
 
           <div className="hidden items-center gap-8 text-sm font-medium text-foreground/70 md:flex">
@@ -149,5 +149,5 @@ export function TechMatchLayout({ children }: { children: ReactNode }) {
 }
 
 export function Wordmark({ className }: { className?: string }) {
-  return <span className={cn("font-display font-bold tracking-tight", className)}>TechMatch</span>;
+  return <span className={cn("font-display font-bold", className)}>TechMatch</span>;
 }
