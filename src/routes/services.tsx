@@ -8,7 +8,7 @@ import { ServicesByGroup } from "@/components/techmatch/sections";
 export const Route = createFileRoute("/services")({
   head: () => ({
     ...pageMeta({
-      title: "Technology Advisory Services — TechMatch LLC",
+      title: "Technology Advisory Services | TechMatch",
       description:
         "Explore TechMatch services for cybersecurity, UCaaS, CCaaS, managed IT, cloud, connectivity, vendor selection, contract negotiation, and IT cost optimization.",
       path: "/services",

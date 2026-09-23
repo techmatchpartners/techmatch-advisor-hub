@@ -8,9 +8,9 @@ import { FaqList } from "@/components/techmatch/sections";
 export const Route = createFileRoute("/faq")({
   head: () => ({
     ...pageMeta({
-      title: "Technology Advisory FAQ — TechMatch LLC",
+      title: "Technology Advisory FAQ | TechMatch",
       description:
-        "Answers about TechMatch services, provider ecosystem, company size fit, negotiation support, implementation involvement, and US and Canada coverage.",
+        "Answers about TechMatch services, provider ecosystem, negotiation support, implementation involvement, and US and Canada coverage.",
       path: "/faq",
     }),
     scripts: [

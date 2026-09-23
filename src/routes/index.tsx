@@ -15,9 +15,9 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     ...pageMeta({
-      title: "TechMatch LLC — Technology Advisory & Vendor Selection",
+      title: "TechMatch | Technology Advisory & Vendor Matching",
       description:
-        "TechMatch helps IT leaders across the United States and Canada identify, evaluate, negotiate, and implement technology solutions from 500+ providers.",
+        "TechMatch helps IT and business leaders find, evaluate, negotiate, and implement technology solutions across a network of 500+ providers.",
       path: "/",
     }),
     scripts: [

@@ -6,7 +6,7 @@ import { company, pageMeta } from "@/components/techmatch/content";
 export const Route = createFileRoute("/contact")({
   head: () =>
     pageMeta({
-      title: "Get a Match — Contact TechMatch LLC",
+      title: "Get a Match | TechMatch",
       description:
         "Contact TechMatch to discuss your technology project and get help identifying, evaluating, negotiating, and implementing the right solution.",
       path: "/contact",

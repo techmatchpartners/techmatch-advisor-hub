@@ -8,7 +8,7 @@ import { ProcessDetail } from "@/components/techmatch/sections";
 export const Route = createFileRoute("/how-it-works")({
   head: () =>
     pageMeta({
-      title: "How TechMatch Works — Advisory Process",
+      title: "How TechMatch Works | Technology Vendor Matching",
       description:
         "Learn how TechMatch helps teams understand requirements, match providers, evaluate proposals, negotiate terms, and stay supported through implementation.",
       path: "/how-it-works",
