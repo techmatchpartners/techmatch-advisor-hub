@@ -37,9 +37,12 @@ export function HeroVisual() {
         </span>
       </div>
       <div className="mt-5 flex items-center gap-3 rounded-2xl bg-foreground px-4 py-4 text-background">
-        <span className="grid size-9 place-items-center rounded-lg bg-accent font-display text-sm font-bold text-accent-foreground">
-          M
-        </span>
+        <img
+          src="/favicon.ico"
+          alt=""
+          aria-hidden="true"
+          className="size-9 shrink-0 object-contain"
+        />
         <div>
           <p className="text-sm font-semibold">Best-fit provider shortlist</p>
           <p className="text-xs text-background/60">3 options · compared · ready to negotiate</p>
