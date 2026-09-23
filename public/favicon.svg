@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="620" viewBox="0 -240 620 620">
+
+<path fill="#0B1020" d="M10 10 H98 L112 30 H67 V116 H36 V30 H10 Z"/>
+<path fill="#3B82F6" d="M68 42 L96 42 L122 72 L164 24 V116 H133 V70 L122 84 L95 54 V116 H68 Z"/>
+
+<text x="195" y="92" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="700" letter-spacing="-3">
+<tspan fill="#0B1020">Tech</tspan><tspan fill="#3B82F6">Match</tspan></text>
+</svg>
