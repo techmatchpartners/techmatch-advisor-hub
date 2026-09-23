@@ -8,7 +8,7 @@ import { AdvisoryCard, PrinciplesGrid } from "@/components/techmatch/sections";
 export const Route = createFileRoute("/about")({
   head: () =>
     pageMeta({
-      title: "About TechMatch LLC — Technology Advisory Philosophy",
+      title: "About TechMatch | Technology Advisory",
       description:
         "TechMatch exists to make the technology marketplace easier to navigate for businesses across the United States and Canada.",
       path: "/about",

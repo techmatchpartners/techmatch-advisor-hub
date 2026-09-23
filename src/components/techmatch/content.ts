@@ -289,6 +289,7 @@ export function pageMeta({
   path: string;
   type?: string;
 }) {
+  const url = path.startsWith("http") ? path : `https://techmatchpartners.com${path === "/" ? "" : path}`;
   return {
     meta: [
       { title },
@@ -296,9 +297,12 @@ export function pageMeta({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: type },
-      { property: "og:url", content: path },
-      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:url", content: url },
+      { property: "og:site_name", content: "TechMatch" },
+      { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
     ],
-    links: [{ rel: "canonical", href: path }],
+    links: [{ rel: "canonical", href: url }],
   };
 }
