@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 import { ArrowRightIcon, CheckIcon, MatchMark } from "./icons";
+import monogramLight from "@/assets/techmatch-monogram-light.png.asset.json";
 import { allServices, company, faqs, principles, processSteps, serviceGroups, valuePillars } from "./content";
 
 const toneClasses = {
@@ -38,10 +39,10 @@ export function HeroVisual() {
       </div>
       <div className="mt-5 flex items-center gap-3 rounded-2xl bg-foreground px-4 py-4 text-background">
         <img
-          src="/favicon.ico"
+          src={monogramLight.url}
           alt=""
           aria-hidden="true"
-          className="size-9 shrink-0 object-contain"
+          className="h-9 w-auto shrink-0 object-contain"
         />
         <div>
           <p className="text-sm font-semibold">Best-fit provider shortlist</p>
