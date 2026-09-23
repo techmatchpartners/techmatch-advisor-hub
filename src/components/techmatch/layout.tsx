@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
 
 import { Button } from "@/components/ui/button";
+import techMatchLogo from "@/assets/techmatch-logo.svg.asset.json";
 import { cn } from "@/lib/utils";
 
 import { ArrowRightIcon, CloseIcon, MenuIcon } from "./icons";
@@ -20,11 +21,8 @@ export function TechMatchLayout({ children }: { children: ReactNode }) {
       </a>
       <header className="sticky top-0 z-50 border-b border-line bg-background/85 backdrop-blur">
         <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6" aria-label="Primary navigation">
-          <Link to="/" className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">
-            <span className="grid size-8 place-items-center rounded-lg bg-foreground font-display text-sm font-bold text-background">
-              M
-            </span>
-            <span className="font-display text-lg font-bold">TechMatch</span>
+          <Link to="/" className="flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">
+            <img src={techMatchLogo.url} alt="TechMatch" className="h-8 w-auto" />
           </Link>
 
           <div className="hidden items-center gap-8 text-sm font-medium text-foreground/70 md:flex">
@@ -92,11 +90,8 @@ export function TechMatchLayout({ children }: { children: ReactNode }) {
       <footer className="border-t border-line bg-surface">
         <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-4">
           <div className="md:col-span-2">
-            <Link to="/" className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-surface">
-              <span className="grid size-8 place-items-center rounded-lg bg-foreground font-display text-sm font-bold text-background">
-                M
-              </span>
-              <span className="font-display text-lg font-bold">TechMatch</span>
+            <Link to="/" className="flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-surface">
+              <img src={techMatchLogo.url} alt="TechMatch" className="h-8 w-auto" />
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-foreground/60">
               A trusted vendor sourcing partner serving organizations across the {company.geography}.
@@ -149,5 +144,5 @@ export function TechMatchLayout({ children }: { children: ReactNode }) {
 }
 
 export function Wordmark({ className }: { className?: string }) {
-  return <span className={cn("font-display font-bold", className)}>TechMatch</span>;
+  return <img src={techMatchLogo.url} alt="TechMatch" className={cn("h-8 w-auto", className)} />;
 }
