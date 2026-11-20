@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
 
 import { Button } from "@/components/ui/button";
-import techMatchLogo from "@/assets/techmatch-logo-horizontal-approved.svg.asset.json";
+const techMatchLogo = { url: "/techmatch-logo-horizontal-approved.svg" };
 import { cn } from "@/lib/utils";
 
 import { ArrowRightIcon, CloseIcon, MenuIcon } from "./icons";
