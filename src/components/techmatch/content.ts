@@ -2,6 +2,7 @@ export const company = {
   name: "TechMatch LLC",
   brand: "TechMatch",
   email: "info@techmatchpartners.com",
+  bookingUrl: "https://app.apollo.io/#/meet/malcolm_smack_2e2/30-min",
   geography: "United States and Canada",
   providerCount: "500+",
   employeeRange: "50–5,000 employees",

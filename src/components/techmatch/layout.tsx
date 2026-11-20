@@ -38,7 +38,15 @@ export function TechMatchLayout({ children }: { children: ReactNode }) {
             ))}
           </div>
 
-          <div className="hidden md:block">
+          <div className="hidden items-center gap-5 md:flex">
+            <a
+              href={company.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-semibold text-foreground/70 transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+            >
+              Book a call
+            </a>
             <Button asChild variant="brand" size="pill">
               <Link to="/contact">
                 Get a Match
@@ -74,6 +82,15 @@ export function TechMatchLayout({ children }: { children: ReactNode }) {
                   {item.label}
                 </Link>
               ))}
+              <a
+                href={company.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl px-3 py-3 text-sm font-semibold text-foreground/75 transition-colors hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                onClick={() => setIsOpen(false)}
+              >
+                Book a call
+              </a>
               <Button asChild variant="brand" size="pill" className="mt-2 justify-center">
                 <Link to="/contact" onClick={() => setIsOpen(false)}>
                   Get a Match
@@ -116,6 +133,11 @@ export function TechMatchLayout({ children }: { children: ReactNode }) {
                 <Link to="/contact" className="transition-colors hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-surface">
                   Get a Match
                 </Link>
+              </li>
+              <li>
+                <a href={company.bookingUrl} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-surface">
+                  Book a call
+                </a>
               </li>
               <li>
                 <a href={`mailto:${company.email}`} className="transition-colors hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-surface">
