@@ -66,7 +66,19 @@ export function ContactForm() {
     }
 
     try {
-      await new Promise((resolve) => window.setTimeout(resolve, 500));
+      const body = new URLSearchParams();
+      body.append("form-name", "get-a-match");
+      body.append("bot-field", String(formData.get("bot-field") ?? ""));
+      body.append("name", result.data.name);
+      body.append("company", result.data.company);
+      body.append("email", result.data.email);
+      body.append("phone", result.data.phone ?? "");
+      const response = await fetch("/__forms.html", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: body.toString(),
+      });
+      if (!response.ok) throw new Error(`Form submission failed: ${response.status}`);
       setValues(initialValues);
       setErrors({});
       setStatus("success");
@@ -76,7 +88,17 @@ export function ContactForm() {
   }
 
   return (
-    <form className="rounded-3xl border border-line bg-surface p-6 shadow-match sm:p-8" onSubmit={handleSubmit} noValidate>
+    <form
+      name="get-a-match"
+      className="rounded-3xl border border-line bg-surface p-6 shadow-match sm:p-8"
+      onSubmit={handleSubmit}
+      noValidate
+    >
+      <p className="hidden" aria-hidden="true">
+        <label>
+          Leave this field empty <input name="bot-field" tabIndex={-1} autoComplete="off" />
+        </label>
+      </p>
       <div className="grid gap-5 sm:grid-cols-2">
         <Field
           id="name"
@@ -122,14 +144,14 @@ export function ContactForm() {
           {status === "loading" ? "Sending..." : "Get a Match"}
           <ArrowRightIcon className="size-5" />
         </Button>
-        <p className="text-sm text-foreground/60">This form is ready for a future backend or CRM connection.</p>
+        <p className="text-sm text-foreground/60">A member of the TechMatch team will be in touch.</p>
       </div>
 
       {status === "success" ? (
         <div className="mt-5 flex gap-3 rounded-2xl border border-success/20 bg-success/10 p-4 text-sm text-success">
           <CheckIcon className="mt-0.5 size-4 shrink-0" />
           <p>
-            Thanks. The form is ready to connect; for now, email <a className="font-semibold underline underline-offset-4" href={`mailto:${company.email}`}>{company.email}</a>.
+            Thanks, we received your request. A member of the TechMatch team will be in touch shortly. Need us sooner? Email <a className="font-semibold underline underline-offset-4" href={`mailto:${company.email}`}>{company.email}</a>.
           </p>
         </div>
       ) : null}
@@ -142,7 +164,8 @@ export function ContactForm() {
 
       {status === "error" && Object.keys(errors).length === 0 ? (
         <p className="mt-5 rounded-2xl border border-destructive/20 bg-destructive/10 p-4 text-sm text-destructive">
-          Something went wrong. Please email TechMatch directly and try again later.
+          Something went wrong sending your request. Please email{" "}
+          <a className="font-semibold underline underline-offset-4" href={`mailto:${company.email}`}>{company.email}</a> instead.
         </p>
       ) : null}
     </form>
