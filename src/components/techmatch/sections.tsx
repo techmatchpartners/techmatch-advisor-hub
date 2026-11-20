@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 import { ArrowRightIcon, CheckIcon, MatchMark } from "./icons";
-import monogramReverse from "@/assets/techmatch-monogram-reverse-approved.svg.asset.json";
+const monogramReverse = { url: "/techmatch-monogram-reverse-approved.svg" };
 import { allServices, company, faqs, principles, processSteps, serviceGroups, valuePillars } from "./content";
 
 const toneClasses = {
