@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 
+import { Button } from "@/components/ui/button";
 import { ContactForm } from "@/components/techmatch/ContactForm";
+import { ArrowRightIcon } from "@/components/techmatch/icons";
 import { company, pageMeta } from "@/components/techmatch/content";
 
 export const Route = createFileRoute("/contact")({
@@ -26,6 +28,18 @@ function ContactPage() {
           Tell us what you're working on and a member of the TechMatch team will get in touch.
         </p>
         <div className="mt-8 rounded-3xl border border-line bg-surface p-6">
+          <p className="text-sm font-semibold text-foreground">Prefer to talk now?</p>
+          <p className="mt-2 text-sm leading-relaxed text-foreground/60">
+            Pick a time that works for you and book a 30-minute intro call.
+          </p>
+          <Button asChild variant="brand" size="pill" className="mt-4">
+            <a href={company.bookingUrl} target="_blank" rel="noopener noreferrer">
+              Book a call
+              <ArrowRightIcon className="size-4" />
+            </a>
+          </Button>
+        </div>
+        <div className="mt-4 rounded-3xl border border-line bg-surface p-6">
           <p className="text-sm font-semibold text-foreground">Prefer email?</p>
           <a href={`mailto:${company.email}`} className="mt-2 inline-block break-all text-base font-semibold text-brand transition hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-surface">
             {company.email}
